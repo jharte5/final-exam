@@ -51,17 +51,8 @@ class Dog {
     this.color = color
     
   }
-  bark () {
-    if (this.breed === 'GreatDane') {
-      makeNoise = 'WOOF'
-    } else if (this.breed === 'Beagle') {
-      makeNoise = 'Awooooooooo.'
-    } else if (this.breed === this.breed) {
-      makeNoise = 'Woof'
-    }
-    
-    return makeNoise
-    console.log(MakeNoise)
+  makeNoise () {
+    return 'Woof.'
   }
   
 
@@ -70,15 +61,18 @@ class Dog {
 class GreatDane extends Dog{
   constructor (name, breed, color) {
     super (name, 'Great Dane') 
-      
-    
   }
-
+  makeNoise () { 
+    return 'WOOF.'
+  }
 }
 
 class Beagle extends Dog {
   constructor (name, breed, color) {
     super (name, 'Beagle', 'white/black/brown')
+  }
+  makeNoise () { 
+    return 'Awooooooooo.'
   }
 
 }
