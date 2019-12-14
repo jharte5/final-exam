@@ -84,8 +84,8 @@ class Beagle extends Dog {
 }
 
 class Pointer extends Dog {
-  constructor (name, breed, color) {
-    super (name, 'Pointer')
+  constructor (name, color, points) {
+    super (name, 'Pointer', color )
   }
 
 }
